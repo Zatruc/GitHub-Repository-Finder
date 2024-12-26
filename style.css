@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -18,12 +19,12 @@ body {
 .container {
   width: 100%;
   max-width: 350px;
-  padding: 10px;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid 1px #ccc;
+  border: solid 1px #e9ecef;
   border-radius: 8px;
   gap: 1rem;
 }
@@ -32,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  max-height: 80px;
 }
 
 header > h1 {
@@ -54,7 +56,7 @@ header > h1 {
 
 #select_languaje {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border: solid 2px #000000;
   border-radius: 5px;
   width: 100%;
@@ -68,9 +70,9 @@ header > h1 {
   gap: 0.8rem;
   border: solid 2px #000000;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 100%;
-  min-width: 100%;
+  min-height: 100px;
 }
 
 .extra {
@@ -79,4 +81,28 @@ header > h1 {
   gap: 0.8rem;
   overflow-wrap: break-word;
   width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+#refresh {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  cursor: pointer;
+}
+#retry {
+  background-color: #e03131;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  cursor: pointer;
 }
